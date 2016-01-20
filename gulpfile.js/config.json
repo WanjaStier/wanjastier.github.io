@@ -22,7 +22,6 @@
             "extractSharedJs": true,
             "entries": {
                 "app": ["./main.jsx"],
-                "page": ["./page.js"],
                 "vendor": ["react"]
             },
             "extensions": ["js", "jsx"]

@@ -4,12 +4,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}frontshift{% endblock %}</title>
+  <title>{% block title %}Gulp Asset Pipeline{% endblock %}</title>
   <link rel="stylesheet" href="styles/main.css">
   {% include "shared/app-icons.html" %}
   {% block head %}{% endblock %}
 </head>
 <body>
+  {% block content %}{% endblock %}
   <script src="scripts/vendor.js"></script>
   {% block javascript %}{% endblock %}
 </body>
