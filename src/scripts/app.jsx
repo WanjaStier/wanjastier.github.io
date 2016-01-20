@@ -1,18 +1,16 @@
-import React from 'react'
-import ContactForm from 'components/contact/ContactForm'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import App from 'components/App'
+import * as AppActions from 'actions/app'
 
-export default class App extends React.Component {
-    constructor() {
-        super();
-        this. _handleClick = this. _handleClick.bind(this);
-    }
-    render() {
-        return(
-            <ContactForm/>
-        )
-    }
-    _handleClick() {
-        console.log(this);
-
+function mapStateToProps(state) {
+    return {
+        counter: state.app
     }
 }
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators(AppActions, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
