@@ -1,7 +1,0 @@
-safe: true
-
-project:
-    name: <Project Name>
-    tagline: <Project Tagline>
-    github: <Optional Github URL>
-
